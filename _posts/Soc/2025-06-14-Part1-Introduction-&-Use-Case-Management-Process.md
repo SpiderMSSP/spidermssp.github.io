@@ -148,7 +148,7 @@ Let's take a carful look at the following flow:
 
 In this flow there are some parts that looks masteries which are `Heatmaps`, so let's discuss them and have clarity what they are as much as will be needed to understand the flow, after that we will have deep explanation on them while implementing them.
 
-### Detection Heatmaps
+## Detection Heatmaps
 
 Heat Maps are a Visualization of MITRE metrics with customization for every technique by assigning different scores and coloring scheme to be able to use it to specify a goal for our detection program, and track the progress to that goal.
 
@@ -156,23 +156,23 @@ We can't set our goal to be covering everything in MITRE, as this is near to imp
 
 So let's discuss what are the types of Heatmaps
 
-#### Attacker heatmap 
+## Attacker heatmap 
 
 Attacker heatmaps represent a prioritized list of attack techniques that are most relevant to the organization. Cyber Threat Intelligence plays a vital role in identifying the attackers that are most relevant. The next step is to enumerate the attack techniques most commonly used by those attackers. The most common techniques used by any attacker is also included. Additionally, the techniques present in common attack tools and abuse by malware are added. Finally, CTI can be used to further priorities the list based on active campaigns.
 
-#### Defensive heatmap 
+## Defensive heatmap 
 
 A defensive heatmap represent a prioritized list of the mitigating value that implemented security controls have for attack techniques. Attack techniques facing strong security controls are less likely to succeed. Missing controls, or controls that have a lower implementation level (for example, due to coverage) provide a much higher opportunity for abuse to their respective attack techniques. The protection heatmap helps to understand what attack techniques are more dangerous to the organization. That information can be used to priorities detection: detect where prevention is most likely to fail.
 
-#### Visibility heatmap 
+## Visibility heatmap 
 
 A visibility heatmap represents the potential attack techniques that you could be monitoring for, based on the availability and quality of data sources. This heatmap provides insight into visibility. Data sources that have less coverage, are not available, or are not connected to the security monitoring platform are candidates for improvement.
 
-#### Detection capability heatmap 
+## Detection capability heatmap 
 
 A detection capability heatmap represents your current detection capability. Detection heatmaps are increasingly being embedded into security monitoring products. For example, in SIEM systems, such a heatmap is possible by tagging detection rules with MITRE ATT&CK® identifiers.
 
-#### Monitoring heatmap
+## Monitoring heatmap
 
 The monitoring heatmap represents the actual rules that were triggered over a defined period of time. This heatmap can show what attack techniques are most common in your environment, and what techniques are rare or even never seen. This provides valuable input to establish your organization-specific attack patterns.
 
@@ -189,7 +189,7 @@ For the previous reason, we need to choose a fictional client that we are going 
 - **Firewall**
 - **EDR**
 
-### Required Documents
+## Required Documents
 
 Back to our flow, here is it the flow image again:
 
@@ -197,9 +197,9 @@ Back to our flow, here is it the flow image again:
 
 it may seem a bit clearer now, but let's start implementing the required documents or files that needs to be there for the process to be able to run, then we can describe a full example after completing the process requirement for how to follow it.
 
-#### Creating Attacker Heatmap
+## Creating Attacker Heatmap
 
-##### Break Down
+## Break Down
 
 let's break down the definition and start working on it based on our client that will get benefit from the program as we choose earlier.
 
@@ -215,7 +215,7 @@ Our program as discussed is targeting a government entity operating in UAE regio
 
 Let's start listing some places where we can collect the groups that are interested in our client's business.
 
-##### Intelligence Sources
+## Intelligence Sources
 
 [ETDA](https://apt.etda.or.th/cgi-bin/aptsearch.cgi):
 
@@ -238,7 +238,7 @@ Another good source could be the following:
 ![Image](/assets/images/soc/part1/APTMAP_LIst.png)
 
 
-##### TTPs Collection
+## TTPs Collection
 
 As said before this topic is more a threat intelligence department work, but if we don't have such a department we can still do it manually from free sources or it will be provided to us by paid service, so what we do in this step is to collect the techniques that was observed to be used by the treat groups we found in the previous step.
 
@@ -321,7 +321,7 @@ The list of groups that we are going to focus on for our fictional client are li
 - DEV-0193, FIN12, GOLD BLACKBURN, Gold Blackburn, Gold Ulrick, Grim Spider, ITG23, Operation “BazaFlix”, Periwinkle Tempest, TEMP.MixMaster, WIZARD SPIDER, Wizard Spider
 ```
 
-##### Heatmap Creation
+## Heatmap Creation
 
 for creating the heatmap on MITRE, we are going to use a tool from MITRE called [Attack Navigator](https://mitre-attack.github.io/attack-navigator/), to not make it this too long let's mention an existing good explanation for using this tool [here](https://www.youtube.com/watch?v=78RIsFqo9pM)
 
@@ -331,7 +331,7 @@ let's use what was explained to map our APT list to and create our `Attacker Hea
 
 Now at this point, we have a list of techniques organized based on the priority which got count by how many APTs from our list are using each specific technique, with that we can say that we have done our `Attack Heatmap`
 
-#### Creating Visibility Heatmap
+## Creating Visibility Heatmap
 
 As Described before, visibility heatmap represents the current visibility we have over the environment, but we are onboarding a new client for our demonstration and there are no data sources we are collecting, so this will be created based on the detections that we will create for the attacker heatmap, or we can start filling it with the known high impotence data sources then we modify it whenever there is a change on the data sources that we are onboarding or offboarding.
 
@@ -494,12 +494,12 @@ I created a target visibility and converted it to the following map:
 ![alt text](/assets/images/soc/part1/Visibility_Map.png)
 
 
-#### Creating Template Files
+## Creating Template Files
 
 By now we have from the documents used in the process we created before, the `Attacker Heatmap` and `Visibility Heatmap`, now we will start creating the rest of the documents required for the process to run.
 
 
-##### Detection Research Template
+## Detection Research Template
 
 This template is designed to ensure comprehensive and structured documentation of adversary techniques, it doesn't mean that the headers here are the only ones that could be used additional headers could be added based on requirements of specific techniques as well.
 
@@ -542,7 +542,7 @@ Recommendations to harden systems and reduce the risk or impact of the technique
 Known misuses that attackers are using for this technique, how they do it, and how we can detect each misuse by creating a detection rule for it.
 
 
-##### Triage Playbook Template
+## Triage Playbook Template
 
 The triage playbook should consist of questions that cover at least the following aspects around the triggers of the rule:
 
@@ -557,7 +557,8 @@ The triage playbook should consist of questions that cover at least the followin
 Name of the triage playbook should be as following:
 
 <TechniqueID>-<UniqueID>-<TechniqueName>.md
-##### Detection Rules Guide
+
+## Detection Rules Guide
 
 ###### Rule naming convention should be in the following format:
 
@@ -713,6 +714,8 @@ tags:
 ```
 
 
+## Final Process & Procedures
+
 By now, all the documents required for the process we created previously are ready so we can start describing from the graph how the process will go:
 
 
@@ -737,7 +740,7 @@ By now, all the documents required for the process we created previously are rea
 9. Escalate to the Detection Engineering & Validation process.
 
 
-### Tooling
+## Tooling
 
 So to extend the tool to cover that part, we created two pages, the first one is to track all the processes that we created and will create, because processes are being put to be followed so they should be somewhere where every one can see them and revise them.
 
