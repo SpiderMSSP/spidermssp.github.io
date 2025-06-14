@@ -10,7 +10,7 @@ categories:
 toc: true
 ---
 
-# Part 1 - Planning & Use Case Management Process
+# Part 1 - SOC-CMM Planning & Use Case Management Process
 
 ## Back Story
 
