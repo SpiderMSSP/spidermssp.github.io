@@ -8,8 +8,8 @@ main:
     url: /categories/#vulnerability_research
   - title: "Offensive"
     url: /categories/#offensive
-  - title: "Detection Engineering"
-    url: /categories/#detection-engineering
+  - title: "SOC"
+    url: /categories/#soc
   - title: "All Categories"
     url: /categories
   
