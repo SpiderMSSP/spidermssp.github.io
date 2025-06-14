@@ -109,7 +109,7 @@ In SOC-CMM, Detection Engineering is listed under process, and it has two proces
 
 These are the following explained in short:
 
-- **Detection Engineering & Validation**: this stands for the process of creating a detection and making sure it follows all the requirements from validation, testing and tracking after deployment.
+- **Detection Engineering & Validation**: this stands for the process of managing a detection and making sure it follows all the requirements from validation, testing and tracking after deployment.
 
 - **Use Case MManagement**: this stands for from where you know how much you are detecting and what detections should be created, and what is possible to detect and much more.
 
