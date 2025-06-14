@@ -556,7 +556,9 @@ The triage playbook should consist of questions that cover at least the followin
 
 Name of the triage playbook should be as following:
 
+```
 <TechniqueID>-<UniqueID>-<TechniqueName>.md
+```
 
 ## Detection Rules Guide
 
