@@ -1,5 +1,5 @@
 ---
-title: "Planning & Use Case Management Process"
+title: "Part1 - Planning & Use Case Management Process"
 classes: wide
 header:
   teaser: /assets/images/soc/part1/use_cases_score.png
