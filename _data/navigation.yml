@@ -1,0 +1,23 @@
+# main links
+main:
+  - title: "Malware Analysis"
+    url: /categories/#malware-analysis
+  - title: "Forensic investigation"
+    url: /categories/#forensic-investigation
+  - title: "vulnerability research"
+    url: /categories/#vulnerability_research
+  - title: "Offensive"
+    url: /categories/#offensive
+  - title: "SOC"
+    url: /categories/#soc
+  - title: "Detection Engineering"
+    url: /categories/#detection-engineering
+  - title: "All Categories"
+    url: /categories
+  
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+  # - title: "Quick-Start Guide"
+  # url: https://google.com
