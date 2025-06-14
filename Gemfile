@@ -8,3 +8,4 @@ gem 'minimal-mistakes-jekyll'
 
 gem "activesupport", ">= 6.0.3.1"
 
+gem 'minitest', '>= 5.0'
