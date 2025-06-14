@@ -14,7 +14,7 @@ toc: true
 
 ## Back Story
 
-I have been contacted a while back with a friend who is a bit active with the community and pushed me through the same and made me feel guilty stopping to share my experience after being put under heavy work, he made it feel like it's a must not something to do just when you are free, this was one of the reason behind me deciding to start a series of blog posts to which will be dedicated to creating a `full functional MSSP` starting from documentations, process, plans, and technical steps to run different departments inside this MSSP efficiently based on `SOC-CMM Framework` guidelines "If you don't know what is that, don't worry will discuss it later", this is not going to be things that you see in courses or and `I am not going to use AI at all` in writing this, this will make it takes time, but it will cover things that no course or AI will tell you about.
+I decided to start a series of blog posts that will be dedicated to creating a `full functional MSSP` starting from documentations, process, plans, and technical steps to run different departments inside this MSSP efficiently based on `SOC-CMM Framework` guidelines "If you don't know what is that, don't worry will discuss it later", this is not going to be things that you see in courses or and `I am not going to use AI at all` in writing this, this will make it takes time, but it will cover things that no course or AI will tell you about.
 
 
 
