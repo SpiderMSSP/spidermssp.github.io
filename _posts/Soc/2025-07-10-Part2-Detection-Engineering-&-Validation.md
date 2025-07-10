@@ -2,7 +2,7 @@
 title: "Part2 - Detection Engineering & Validation Process"
 classes: wide
 header:
-  teaser: /assets/images/soc/part2/score.png
+  teaser: /assets/images/soc/part2/Score.png
 ribbon: DodgerBlue
 description: "The Second part of building a SOC-CMM compliant MSSP"
 categories:
