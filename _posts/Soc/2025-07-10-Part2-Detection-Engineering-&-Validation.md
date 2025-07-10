@@ -163,7 +163,7 @@ You can find the script that we want to run via group policy here:
 
 make sure to read the script and put the required files on the mentioned shares.
 
-```ps1
+```cs
 # === Step 1: Check if Sysmon is already installed ===
 $sysmonService = Get-Service -Name "Sysmon64" -ErrorAction SilentlyContinue
 
